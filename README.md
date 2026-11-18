@@ -14,6 +14,8 @@
 </p>
 
 <p align="center">
+  <a href="https://merofarahat923-coder.github.io/aef-media-player-releases/"><b>🌐 الموقع</b></a> &nbsp;·&nbsp;
+  <a href="https://merofarahat923-coder.github.io/aef-media-player-releases/help.html"><b>📖 المساعدة</b></a> &nbsp;·&nbsp;
   <a href="#ar"><b>العربية</b></a> &nbsp;·&nbsp; <a href="#en"><b>English</b></a>
 </p>
 
