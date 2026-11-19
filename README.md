@@ -20,7 +20,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/screenshot-ar.png" alt="AEF Media Player — الواجهة العربية مع قائمة القنوات" width="100%">
+  <img src="assets/tv-ar.png" alt="AEF Media Player — وضع التليفزيون بشريط القناة" width="100%">
 </p>
 
 ---
@@ -81,8 +81,12 @@
 ### 🖼️ صور من البرنامج
 
 <p align="center">
-  <img src="assets/screenshot-groups-ar.png" alt="مجموعات القنوات" width="49%">
-  <img src="assets/screenshot-settings.png" alt="إعدادات الصورة" width="49%">
+  <img src="assets/tv-list-ar.png" alt="قائمة القنوات مع جدول البرامج" width="49%">
+  <img src="assets/home-ar.png" alt="الشاشة الرئيسية للـ IPTV" width="49%">
+</p>
+<p align="center">
+  <img src="assets/screenshot-ar.png" alt="المشغّل مع قائمة القنوات" width="66%">
+  <img src="assets/remote-ar.png" alt="ريموت الموبايل" width="22%">
 </p>
 
 ### 📥 التثبيت
@@ -166,7 +170,7 @@
 **AEF Media Player** plays your movies, series, music and IPTV channels in one light app, with a complete right-to-left Arabic interface (plus English, French, Turkish and Urdu), and Arabic subtitles that display correctly the first time.
 
 <p align="center">
-  <img src="assets/screenshot-en.png" alt="AEF Media Player — English interface with the channel list" width="100%">
+  <img src="assets/tv-en.png" alt="AEF Media Player — TV mode with the channel banner" width="100%">
 </p>
 
 <p align="center">

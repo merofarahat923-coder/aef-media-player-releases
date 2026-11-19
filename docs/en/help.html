@@ -3,7 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#06080D">
 <title>Help — AEF Media Player</title>
+<meta name="description" content="How to use AEF Media Player: TV mode, the IPTV home screen, the phone remote, the programme guide, recording, subtitles, the library and playing on your TV.">
 <link rel="icon" href="../assets/logo.png">
 <link rel="alternate" hreflang="ar" href="../help.html">
 <link rel="stylesheet" href="../style.css">
@@ -11,94 +13,163 @@
 <body>
 <header class="top"><div class="wrap">
   <a class="brand" href="./"><img src="../assets/logo.png" alt="">AEF Media Player</a>
-  <nav><a href="./">Home</a><a class="lang" href="../help.html" hreflang="ar">العربية</a>
-  <a class="btn primary small cta" href="https://github.com/merofarahat923-coder/aef-media-player-releases/releases/latest">Download</a></nav>
+  <nav>
+    <a class="hide-sm" href="./">Home</a>
+    <a class="hide-sm" href="help.html">Help</a>
+    <a class="lang" href="../help.html" hreflang="ar"><svg class="ico"><use href="../assets/icons.svg#globe"/></svg><span>العربية</span></a>
+    <a class="btn primary small" href="https://github.com/merofarahat923-coder/aef-media-player-releases/releases/latest"><svg class="ico"><use href="../assets/icons.svg#download"/></svg>Download</a>
+  </nav>
 </div></header>
 
 <main class="doc">
-<h1>Help</h1>
-<div class="updated">Everything the player does, step by step.</div>
+<div class="head"><div class="badge"><svg class="ico"><use href="../assets/icons.svg#help"/></svg></div><h1>Help</h1></div>
+<div class="updated">Everything the player does, step by step. (Version 2.3.0)</div>
 <div class="toc">
-  <a href="#install">Install</a><a href="#play">Playing</a><a href="#subs">Subtitles</a><a href="#iptv">IPTV</a><a href="#guide">Guide and recording</a>
-  <a href="#library">Library</a><a href="#tv">TV</a><a href="#keys">Shortcuts</a><a href="#problems">Problems</a>
+  <a href="#install"><svg class="ico"><use href="../assets/icons.svg#download"/></svg>Install</a>
+  <a href="#iptv"><svg class="ico"><use href="../assets/icons.svg#home"/></svg>IPTV and the home screen</a>
+  <a href="#tvmode"><svg class="ico"><use href="../assets/icons.svg#tv"/></svg>TV mode</a>
+  <a href="#remote"><svg class="ico"><use href="../assets/icons.svg#phone"/></svg>Phone remote</a>
+  <a href="#guide"><svg class="ico"><use href="../assets/icons.svg#guide"/></svg>Guide and recording</a>
+  <a href="#more"><svg class="ico"><use href="../assets/icons.svg#grid"/></svg>Multi-view and locks</a>
+  <a href="#play"><svg class="ico"><use href="../assets/icons.svg#play"/></svg>Playback</a>
+  <a href="#subs"><svg class="ico"><use href="../assets/icons.svg#subs"/></svg>Subtitles</a>
+  <a href="#library"><svg class="ico"><use href="../assets/icons.svg#library"/></svg>Library and TV</a>
+  <a href="#look"><svg class="ico"><use href="../assets/icons.svg#palette"/></svg>Looks and language</a>
+  <a href="#keys"><svg class="ico"><use href="../assets/icons.svg#keys"/></svg>Shortcuts</a>
+  <a href="#problems"><svg class="ico"><use href="../assets/icons.svg#tools"/></svg>Problems</a>
 </div>
 
-<h2 id="install">Install</h2>
+<h2 id="install"><svg class="ico"><use href="../assets/icons.svg#download"/></svg>Install</h2>
 <ol>
   <li>Download <b>AEFMediaPlayer-…-Setup.exe</b> from the <a href="https://github.com/merofarahat923-coder/aef-media-player-releases/releases/latest">latest release</a>.</li>
   <li>Run it, pick a language and follow the steps.</li>
   <li>If Windows shows <b>Windows protected your PC</b>, click <b>More info</b>, then <b>Run anyway</b>.</li>
 </ol>
-<p>On first start the player asks for the language and look, and whether it should open your media files. Requires Windows 10 (1809 or newer) or Windows 11, 64-bit.</p>
+<p>On first start the player asks for your language and look, and whether it should open your videos. Requirements: Windows 10 (1809 or newer) or Windows 11, 64-bit.</p>
+<p><b>Updates:</b> once a day the player checks for a new version; it downloads it in the background, verifies it, and installs it when you close the player. To be asked first: Settings → turn off "Install updates by themselves".</p>
 
-<h2 id="play">Playing</h2>
-<ul>
-  <li><b>Open:</b> drop files or folders on the window, or <kbd>Ctrl</kbd>+<kbd>O</kbd>. Streams: <kbd>Ctrl</kbd>+<kbd>N</kbd>.</li>
-  <li><b>Resume:</b> files open where you stopped them (can be turned off in Settings).</li>
-  <li><b>Seek-bar preview:</b> hover over the bar to see that moment.</li>
-  <li><b>Bookmarks:</b> <kbd>B</kbd> saves the current moment, <kbd>Shift</kbd>+<kbd>B</kbd> jumps to the next one; also in Playback → Bookmarks.</li>
-  <li><b>Sleep timer:</b> Playback → Sleep timer: a duration, or "when this item ends". The sound fades out first.</li>
-  <li><b>Mini player:</b> <kbd>Ctrl</kbd>+<kbd>M</kbd>.</li>
-</ul>
-
-<h2 id="subs">Subtitles</h2>
-<ul>
-  <li>A subtitle with the same name as the video loads by itself; old Arabic subtitle files display correctly.</li>
-  <li><b>Online:</b> <kbd>Ctrl</kbd>+<kbd>D</kbd>. A ★ means made for exactly your copy of the video. The subtitle is saved beside the video. Without an account the service allows a few downloads a day.</li>
-  <li>Size, colour and timing: the Subtitle menu; <kbd>G</kbd> / <kbd>H</kbd> for timing.</li>
-</ul>
-
-<h2 id="iptv">IPTV</h2>
+<h2 id="iptv"><svg class="ico"><use href="../assets/icons.svg#home"/></svg>IPTV and the home screen</h2>
+<h3>Adding an account</h3>
 <ol>
-  <li>Media → IPTV accounts (<kbd>Ctrl</kbd>+<kbd>T</kbd>) → Add account.</li>
-  <li>Type the server, user name and password from your provider, then "Check and save".</li>
-  <li>Choose <b>Live TV</b>, <b>Films</b> or <b>Series</b>.</li>
+  <li>Press <kbd>Ctrl</kbd>+<kbd>T</kbd> (or Media → IPTV accounts) → Add account.</li>
+  <li>Choose <b>User name and password</b> and type the server address and details your provider sent, or choose <b>Channel list link (m3u)</b> and paste the link.</li>
+  <li>Click "Check and save".</li>
 </ol>
-<p>A channel list file (m3u) also works: open it like any file; logos, groups and the guide appear by themselves. In the list: search (<kbd>Enter</kbd> plays the first match, <kbd>Esc</kbd> clears), "All groups" for groups and favourites, the star to add a favourite, and the Wi-Fi button to check which channels answer.</p>
-
-<h2 id="guide">Guide and recording</h2>
+<p>The password is stored encrypted on this PC and never written to any file or log.</p>
+<h3>The home screen</h3>
+<img class="inline" src="../assets/home-en.webp" alt="The IPTV home screen" width="1320" height="1000" loading="lazy">
 <ul>
-  <li><b>Programme guide:</b> <kbd>Ctrl</kbd>+<kbd>G</kbd>. "Remind me" pops up a note a minute before a programme.</li>
-  <li><b>Record:</b> <kbd>Ctrl</kbd>+<kbd>R</kbd> records what is playing. In the guide, "Record" switches to the channel and records the programme by itself (keep the player open).</li>
-  <li>Recordings go to <b>Videos → AEF Media Player → Recordings</b>.</li>
+  <li><kbd>Ctrl</kbd>+<kbd>T</kbd> opens your account's home: <b>Live TV</b>, <b>Films</b> and <b>Series</b> (or keys <kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd>).</li>
+  <li>At the top: your subscription's state, expiry date and screens; the account button switches between accounts or manages them.</li>
+  <li><b>Continue watching:</b> films and episodes you stopped part-way; they continue from there.</li>
+  <li><b>Recent channels:</b> one click back to a channel you were watching.</li>
+</ul>
+<h3>Films and series</h3>
+<p>With posters, plots and ratings: newest, top rated, favourites and every category, with search. A title's page has "Add to favourites".</p>
+<h3>Channel list files (m3u)</h3>
+<p>Open the file like any other, or paste the link in Open network stream (<kbd>Ctrl</kbd>+<kbd>N</kbd>). Logos, groups and the guide appear by themselves.</p>
+
+<h2 id="tvmode"><svg class="ico"><use href="../assets/icons.svg#tv"/></svg>TV mode</h2>
+<img class="inline" src="../assets/tv-list-en.webp" alt="The channel list in TV mode" width="1440" height="860" loading="lazy">
+<p>When a channel plays, the player becomes a TV receiver: the video controls and the playlist give way to a channel banner and TV buttons.</p>
+<ul>
+  <li><b>What is on:</b> move the mouse, click the picture, or press <kbd>Space</kbd> or <kbd>I</kbd>: number, logo, name, what is on and next. It goes away once the mouse rests.</li>
+  <li><b>Change channel:</b> <kbd>↑</kbd> <kbd>↓</kbd>, or type the channel number. <kbd>Backspace</kbd> goes back to the last channel.</li>
+  <li><b>Volume:</b> <kbd>←</kbd> <kbd>→</kbd>.</li>
+  <li><b>Channel list:</b> <kbd>Enter</kbd>. Groups on one side, the chosen channel's programmes on the other. Arrows move, <kbd>Enter</kbd> plays, <kbd>Esc</kbd> closes.</li>
+  <li><b>Leaving:</b> <kbd>T</kbd>, or the TV button at the end of the bar. To turn it off: Settings → IPTV → "TV mode for channels".</li>
 </ul>
 
-<h2 id="library">Library</h2>
+<h2 id="remote"><svg class="ico"><use href="../assets/icons.svg#phone"/></svg>Phone remote</h2>
+<ol>
+  <li>Press <kbd>Ctrl</kbd>+<kbd>J</kbd> in the player.</li>
+  <li>Scan the code with your phone's camera. Both must be on the same Wi-Fi. The first time, Windows may ask whether the player may use the network: choose Allow (private networks).</li>
+  <li>From the remote page you can <b>add it to your home screen</b>: on iPhone, Share → "Add to Home Screen"; on Android, from the browser menu.</li>
+</ol>
 <ul>
-  <li><kbd>Ctrl</kbd>+<kbd>E</kbd>. It starts with your Videos folder; add more with "Folders...".</li>
-  <li>Series are recognised from names like <code>Show.S01E02</code>, <code>مسلسل - الحلقة 5</code> or <code>Season 1</code> folders.</li>
+  <li>Arrows and OK work like a receiver's remote; the <b>Channels</b> key opens the channel list on the screen, browsed with the arrows, and <b>Back</b> closes it.</li>
+  <li>The remote works on your home network only, behind a secret code. "New code" in the remote window cuts off any phone that had the old one.</li>
 </ul>
 
-<h2 id="tv">Play on TV</h2>
+<h2 id="guide"><svg class="ico"><use href="../assets/icons.svg#guide"/></svg>Programme guide and recording</h2>
 <ul>
-  <li><b>Smart TV:</b> <kbd>Ctrl</kbd>+<kbd>K</kbd> and pick the TV; Space on the PC pauses the TV. Both must be on the same network; Windows may ask once to let the player use the network.</li>
-  <li><b>Mirror the screen:</b> "Mirror the whole screen (Miracast)" in the same window.</li>
+  <li><b>Guide:</b> <kbd>Ctrl</kbd>+<kbd>G</kbd>. Channels on one side, today's programmes on the other.</li>
+  <li><b>Catch-up:</b> programmes that already aired, marked ⏪, play from your provider's recordings; or start the current one from the beginning (if your provider offers it).</li>
+  <li><b>Remind me:</b> pick an upcoming programme and click "Remind me"; a reminder pops up a minute before it starts.</li>
+  <li><b>Record:</b> <kbd>Ctrl</kbd>+<kbd>R</kbd> records what is playing. In the guide, pick a programme and click "Record": the player switches channel and records it (leave the player open). Recordings go to <b>Videos → AEF Media Player → Recordings</b>.</li>
 </ul>
 
-<h2 id="keys">Shortcuts</h2>
+<h2 id="more"><svg class="ico"><use href="../assets/icons.svg#grid"/></svg>Multi-view and channel locks</h2>
+<ul>
+  <li><b>Two or four channels at once:</b> <kbd>Ctrl</kbd>+<kbd>U</kbd>, or right-click a channel → "Watch with others (multi-view)". Click a picture to hear it; double-click to watch it alone.</li>
+  <li><b>PIN locks:</b> right-click a channel in the list → lock the channel or its whole group. The first time you choose a PIN (4 digits or more). Settings → IPTV changes the PIN or removes all locks.</li>
+</ul>
+
+<h2 id="play"><svg class="ico"><use href="../assets/icons.svg#play"/></svg>Playback</h2>
+<ul>
+  <li><b>Open a file:</b> drag it onto the player, or <kbd>Ctrl</kbd>+<kbd>O</kbd>. A whole folder opens as a playlist.</li>
+  <li><b>Resume:</b> films (and films and episodes from IPTV accounts) open where you stopped.</li>
+  <li><b>Seek preview:</b> hover over the seek bar to see a picture from that moment.</li>
+  <li><b>Bookmarks:</b> <kbd>B</kbd> marks the moment, <kbd>Shift</kbd>+<kbd>B</kbd> jumps to the next one.</li>
+  <li><b>Sleep timer:</b> Playback → Sleep timer; the volume fades before it stops.</li>
+  <li><b>Mini player:</b> <kbd>Ctrl</kbd>+<kbd>M</kbd>, a small window on top of other apps.</li>
+</ul>
+
+<h2 id="subs"><svg class="ico"><use href="../assets/icons.svg#subs"/></svg>Subtitles</h2>
+<ul>
+  <li>A subtitle file with the video's name loads by itself. Old Arabic subtitle files display correctly with nothing to set.</li>
+  <li><b>Subtitles online:</b> <kbd>Ctrl</kbd>+<kbd>D</kbd>. A ★ means the subtitle was made for exactly this copy of the video.</li>
+  <li>Size, colour and timing: in the Subtitle menu, or <kbd>G</kbd> and <kbd>H</kbd> for timing.</li>
+</ul>
+
+<h2 id="library"><svg class="ico"><use href="../assets/icons.svg#library"/></svg>Library and playing on your TV</h2>
+<ul>
+  <li><b>Library:</b> <kbd>Ctrl</kbd>+<kbd>E</kbd>. Series are recognised from names like <code>Show.S01E02</code>.</li>
+  <li><b>Smart TV:</b> <kbd>Ctrl</kbd>+<kbd>K</kbd> and pick the TV (on the same network), or "Mirror the whole screen (Miracast)".</li>
+</ul>
+
+<h2 id="look"><svg class="ico"><use href="../assets/icons.svg#palette"/></svg>Looks, language and accessibility</h2>
+<ul>
+  <li><b>Settings:</b> <kbd>Ctrl</kbd>+<kbd>,</kbd>.</li>
+  <li><b>Language:</b> Arabic, English, French, Turkish, Urdu.</li>
+  <li><b>Looks:</b> dark, light, pure black, slate, and eight accent colours.</li>
+  <li><b>Accessibility:</b> text size (normal, large, larger), high contrast, and button names a screen reader speaks.</li>
+</ul>
+
+<h2 id="keys"><svg class="ico"><use href="../assets/icons.svg#keys"/></svg>Shortcuts</h2>
 <table>
-  <tr><td><kbd>Space</kbd></td><td>Play / pause</td></tr>
-  <tr><td><kbd>F</kbd> / <kbd>F11</kbd></td><td>Full screen (<kbd>Esc</kbd> leaves)</td></tr>
-  <tr><td><kbd>←</kbd> <kbd>→</kbd></td><td>10 s (<kbd>Shift</kbd> 3 s, <kbd>Ctrl</kbd> 1 min)</td></tr>
-  <tr><td><kbd>↑</kbd> <kbd>↓</kbd> / <kbd>M</kbd></td><td>Volume / mute</td></tr>
+  <tr><td><kbd>Space</kbd></td><td>Play / pause (TV mode: what is on)</td></tr>
+  <tr><td><kbd>F</kbd> / <kbd>F11</kbd></td><td>Fullscreen (<kbd>Esc</kbd> leaves)</td></tr>
+  <tr><td><kbd>←</kbd> <kbd>→</kbd></td><td>10 seconds (TV mode: volume)</td></tr>
+  <tr><td><kbd>↑</kbd> <kbd>↓</kbd></td><td>Volume (TV mode: next / previous channel)</td></tr>
+  <tr><td><kbd>Enter</kbd> / <kbd>Backspace</kbd></td><td>TV mode: channel list / last channel</td></tr>
+  <tr><td><kbd>T</kbd> / <kbd>I</kbd></td><td>TV mode / channel information</td></tr>
+  <tr><td><kbd>M</kbd></td><td>Mute</td></tr>
   <tr><td><kbd>N</kbd> / <kbd>P</kbd></td><td>Next / previous</td></tr>
-  <tr><td><kbd>V</kbd></td><td>Subtitles on / off</td></tr>
-  <tr><td><kbd>Ctrl</kbd>+<kbd>E</kbd> / <kbd>Ctrl</kbd>+<kbd>T</kbd> / <kbd>Ctrl</kbd>+<kbd>G</kbd></td><td>Library / IPTV accounts / guide</td></tr>
-  <tr><td><kbd>Ctrl</kbd>+<kbd>D</kbd> / <kbd>Ctrl</kbd>+<kbd>R</kbd> / <kbd>Ctrl</kbd>+<kbd>K</kbd></td><td>Subtitles online / record / play on TV</td></tr>
+  <tr><td><kbd>V</kbd></td><td>Show / hide subtitles</td></tr>
+  <tr><td><kbd>B</kbd> / <kbd>Shift</kbd>+<kbd>B</kbd></td><td>Bookmark / next bookmark</td></tr>
+  <tr><td><kbd>Ctrl</kbd>+<kbd>O</kbd> / <kbd>Ctrl</kbd>+<kbd>N</kbd></td><td>Open file / stream</td></tr>
+  <tr><td><kbd>Ctrl</kbd>+<kbd>T</kbd> / <kbd>Ctrl</kbd>+<kbd>G</kbd></td><td>IPTV home / programme guide</td></tr>
+  <tr><td><kbd>Ctrl</kbd>+<kbd>J</kbd> / <kbd>Ctrl</kbd>+<kbd>U</kbd></td><td>Phone remote / multi-view</td></tr>
+  <tr><td><kbd>Ctrl</kbd>+<kbd>R</kbd> / <kbd>Ctrl</kbd>+<kbd>D</kbd></td><td>Record / subtitles online</td></tr>
+  <tr><td><kbd>Ctrl</kbd>+<kbd>E</kbd> / <kbd>Ctrl</kbd>+<kbd>K</kbd></td><td>Library / play on TV</td></tr>
   <tr><td><kbd>Ctrl</kbd>+<kbd>,</kbd></td><td>Settings</td></tr>
 </table>
 
-<h2 id="problems">Problems</h2>
+<h2 id="problems"><svg class="ico"><use href="../assets/icons.svg#tools"/></svg>If something goes wrong</h2>
 <ul>
-  <li>Picture wrong or stuttering: Settings → Playback → turn off "Hardware acceleration".</li>
-  <li>Subtitle gibberish: Subtitle → Text encoding → Arabic (Windows-1256).</li>
-  <li>Still stuck? Help → Report a problem in the player, or <a href="https://github.com/merofarahat923-coder/aef-media-player-releases/issues/new">here</a>.</li>
+  <li>The picture looks wrong or stutters: Settings → Playback → turn off "Hardware acceleration" and try again.</li>
+  <li>Subtitles show odd characters: Subtitle → Text encoding → Arabic (Windows-1256).</li>
+  <li>A channel does not play: try the channel check, and contact your provider if every channel is down.</li>
+  <li>The phone cannot reach the remote: check it is on the same Wi-Fi and that Windows allows the player on the network. If the PC's address changed, scan the code again.</li>
+  <li>Still stuck? Help → Report a problem inside the player, or <a href="https://github.com/merofarahat923-coder/aef-media-player-releases/issues/new">here</a>.</li>
 </ul>
 </main>
 
 <footer><div class="wrap">
+  <a class="brand" href="./"><img src="../assets/logo.png" alt="">AEF Media Player</a>
+  <nav><a href="help.html">Help</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="https://github.com/merofarahat923-coder/aef-media-player-releases/issues/new">Report a problem</a></nav>
   <div>© AEF Media Player</div>
-  <div><a href="./">Home</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></div>
 </div></footer>
 </body>
 </html>

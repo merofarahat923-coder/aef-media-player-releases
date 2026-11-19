@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#06080D">
 <title>المساعدة — AEF Media Player</title>
-<meta name="description" content="إزاي تستخدم AEF Media Player: التشغيل، الترجمة، IPTV، دليل البرامج، التسجيل، المكتبة، والتشغيل على التليفزيون.">
+<meta name="description" content="إزاي تستخدم AEF Media Player: وضع التليفزيون، الشاشة الرئيسية للـ IPTV، ريموت الموبايل، دليل البرامج، التسجيل، الترجمة، المكتبة، والتشغيل على التليفزيون.">
 <link rel="icon" href="assets/logo.png">
 <link rel="alternate" hreflang="en" href="en/help.html">
 <link rel="stylesheet" href="style.css">
@@ -12,113 +13,163 @@
 <body>
 <header class="top"><div class="wrap">
   <a class="brand" href="./"><img src="assets/logo.png" alt="">AEF Media Player</a>
-  <nav><a href="./">الرئيسية</a><a class="lang" href="en/help.html" hreflang="en">English</a>
-  <a class="btn primary small cta" href="https://github.com/merofarahat923-coder/aef-media-player-releases/releases/latest">تحميل</a></nav>
+  <nav>
+    <a class="hide-sm" href="./">الرئيسية</a>
+    <a class="hide-sm" href="help.html">المساعدة</a>
+    <a class="lang" href="en/help.html" hreflang="en"><svg class="ico"><use href="assets/icons.svg#globe"/></svg><span>English</span></a>
+    <a class="btn primary small" href="https://github.com/merofarahat923-coder/aef-media-player-releases/releases/latest"><svg class="ico"><use href="assets/icons.svg#download"/></svg>تحميل</a>
+  </nav>
 </div></header>
 
 <main class="doc">
-<h1>المساعدة</h1>
-<div class="updated">كل حاجة البرنامج بيعملها، خطوة بخطوة.</div>
+<div class="head"><div class="badge"><svg class="ico"><use href="assets/icons.svg#help"/></svg></div><h1>المساعدة</h1></div>
+<div class="updated">كل حاجة البرنامج بيعملها، خطوة بخطوة. (الإصدار 2.3.0)</div>
 <div class="toc">
-  <a href="#install">التثبيت</a><a href="#play">التشغيل</a><a href="#subs">الترجمة</a><a href="#iptv">IPTV</a><a href="#guide">دليل البرامج والتسجيل</a>
-  <a href="#library">المكتبة</a><a href="#tv">التليفزيون</a><a href="#keys">الاختصارات</a><a href="#problems">لو حصلت مشكلة</a>
+  <a href="#install"><svg class="ico"><use href="assets/icons.svg#download"/></svg>التثبيت</a>
+  <a href="#iptv"><svg class="ico"><use href="assets/icons.svg#home"/></svg>IPTV والشاشة الرئيسية</a>
+  <a href="#tvmode"><svg class="ico"><use href="assets/icons.svg#tv"/></svg>وضع التليفزيون</a>
+  <a href="#remote"><svg class="ico"><use href="assets/icons.svg#phone"/></svg>ريموت الموبايل</a>
+  <a href="#guide"><svg class="ico"><use href="assets/icons.svg#guide"/></svg>الدليل والتسجيل</a>
+  <a href="#more"><svg class="ico"><use href="assets/icons.svg#grid"/></svg>مشاهدة متعددة وقفل</a>
+  <a href="#play"><svg class="ico"><use href="assets/icons.svg#play"/></svg>التشغيل</a>
+  <a href="#subs"><svg class="ico"><use href="assets/icons.svg#subs"/></svg>الترجمة</a>
+  <a href="#library"><svg class="ico"><use href="assets/icons.svg#library"/></svg>المكتبة والتليفزيون</a>
+  <a href="#look"><svg class="ico"><use href="assets/icons.svg#palette"/></svg>الشكل واللغة</a>
+  <a href="#keys"><svg class="ico"><use href="assets/icons.svg#keys"/></svg>الاختصارات</a>
+  <a href="#problems"><svg class="ico"><use href="assets/icons.svg#tools"/></svg>لو حصلت مشكلة</a>
 </div>
 
-<h2 id="install">التثبيت</h2>
+<h2 id="install"><svg class="ico"><use href="assets/icons.svg#download"/></svg>التثبيت</h2>
 <ol>
   <li>حمّل ملف <b>AEFMediaPlayer-…-Setup.exe</b> من <a href="https://github.com/merofarahat923-coder/aef-media-player-releases/releases/latest">صفحة أحدث إصدار</a>.</li>
   <li>افتحه واختار اللغة وكمّل الخطوات.</li>
   <li>لو ظهرت رسالة <b>Windows protected your PC</b>: اضغط <b>More info</b> وبعدين <b>Run anyway</b>.</li>
 </ol>
 <p>أول مرة يفتح، البرنامج بيسألك على اللغة والشكل، وإذا كنت عايزه يبقى هو اللي بيفتح الفيديوهات. المتطلبات: ويندوز 10 (1809 أو أحدث) أو ويندوز 11، 64 بت.</p>
+<p><b>التحديثات:</b> البرنامج بيدوّر مرة في اليوم، ولو فيه جديد بينزّله في الخلفية ويتأكد من سلامته ويسطّبه لما تقفل البرنامج. ولو حابب يسألك الأول: الإعدادات ← اقفل "تسطيب التحديثات لوحدها".</p>
 
-<h2 id="play">التشغيل</h2>
+<h2 id="iptv"><svg class="ico"><use href="assets/icons.svg#home"/></svg>IPTV والشاشة الرئيسية</h2>
+<h3>إضافة حساب</h3>
+<ol>
+  <li>اضغط <kbd>Ctrl</kbd>+<kbd>T</kbd> (أو الوسائط ← حسابات IPTV) ← إضافة حساب.</li>
+  <li>اختار <b>اسم مستخدم وكلمة سر</b> واكتب عنوان السيرفر والبيانات اللي بعتهالك المزوّد، أو اختار <b>رابط قائمة قنوات (m3u)</b> والصق الرابط.</li>
+  <li>اضغط "تأكيد وحفظ".</li>
+</ol>
+<p>كلمة السر بتتحفظ متشفّرة على الجهاز، ومش بتتكتب في أي ملف ولا سجل.</p>
+<h3>الشاشة الرئيسية</h3>
+<img class="inline" src="assets/home-ar.webp" alt="الشاشة الرئيسية للـ IPTV" width="1320" height="1000" loading="lazy">
+<ul>
+  <li><kbd>Ctrl</kbd>+<kbd>T</kbd> بيفتح الشاشة الرئيسية لحسابك: <b>البث المباشر</b> و<b>الأفلام</b> و<b>المسلسلات</b> (أو الأرقام <kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd>).</li>
+  <li>فوق: حالة اشتراكك وميعاد انتهاؤه وعدد الشاشات، ومن زرار اسم الحساب تبدّل بين حساباتك أو تديرهم.</li>
+  <li><b>كمّل المشاهدة:</b> الأفلام والحلقات اللي وقفت في نصها، وبتكمّل من نفس المكان.</li>
+  <li><b>القنوات الأخيرة:</b> ضغطة وترجع لقناة كنت بتتفرج عليها.</li>
+</ul>
+<h3>الأفلام والمسلسلات</h3>
+<p>بصورها وقصتها وتقييمها، مقسّمة: الأحدث، والأعلى تقييماً، والمفضلة، وكل الأقسام، مع بحث. في صفحة الفيلم أو المسلسل تقدر تضيفه للمفضلة.</p>
+<h3>بملف قنوات (m3u)</h3>
+<p>افتح الملف زي أي ملف، أو الصق الرابط في "فتح بث" (<kbd>Ctrl</kbd>+<kbd>N</kbd>). لو فيه لوجوهات ومجموعات ودليل برامج هتظهر لوحدها.</p>
+
+<h2 id="tvmode"><svg class="ico"><use href="assets/icons.svg#tv"/></svg>وضع التليفزيون</h2>
+<img class="inline" src="assets/tv-list-ar.webp" alt="قائمة القنوات في وضع التليفزيون" width="1440" height="860" loading="lazy">
+<p>أول ما تشغّل قناة، البرنامج بيبقى زي الرسيفر: أزرار الفيديو وقائمة التشغيل بيختفوا، وبيظهر شريط القناة وأزرار التليفزيون.</p>
+<ul>
+  <li><b>اسم القناة:</b> حرّك الماوس، أو دوس على الصورة، أو <kbd>Space</kbd>، أو <kbd>I</kbd>: يظهر الرقم واللوجو والاسم، والبرنامج اللي شغال واللي جاي. وبيختفي لوحده لما توقف الماوس.</li>
+  <li><b>تقليب القنوات:</b> <kbd>↑</kbd> <kbd>↓</kbd>، أو اكتب رقم القناة. <kbd>Backspace</kbd> يرجّعك لآخر قناة.</li>
+  <li><b>الصوت:</b> <kbd>←</kbd> <kbd>→</kbd>.</li>
+  <li><b>قائمة القنوات:</b> <kbd>Enter</kbd>. المجموعات على جنب، وجدول برامج القناة اللي واقف عليها على الجنب التاني. الأسهم بتتحرك، و<kbd>Enter</kbd> يشغّل، و<kbd>Esc</kbd> يقفل.</li>
+  <li><b>الخروج:</b> <kbd>T</kbd> أو زرار التليفزيون في آخر الأزرار. ولو مش عايزه خالص: الإعدادات ← IPTV ← اقفل "وضع التليفزيون للقنوات".</li>
+</ul>
+
+<h2 id="remote"><svg class="ico"><use href="assets/icons.svg#phone"/></svg>ريموت الموبايل</h2>
+<ol>
+  <li>اضغط <kbd>Ctrl</kbd>+<kbd>J</kbd> في البرنامج.</li>
+  <li>امسح الكود اللي ظاهر بكاميرا الموبايل. لازم الموبايل والكمبيوتر يكونوا على نفس الواي فاي. أول مرة ممكن ويندوز يسألك تسمح للبرنامج يستخدم الشبكة: اختار "سماح" (الشبكات الخاصة).</li>
+  <li>من صفحة الريموت تقدر <b>تثبّته كأيقونة</b>: في الآيفون من زرار المشاركة ← "إضافة إلى الشاشة الرئيسية"، وفي أندرويد من قائمة المتصفح.</li>
+</ol>
+<ul>
+  <li>الأسهم وOK زي ريموت الرسيفر، وزرار <b>القنوات</b> بيفتح قائمة القنوات على الشاشة وتقلّب فيها بالأسهم، و<b>رجوع</b> بيقفلها.</li>
+  <li>الريموت شغال على شبكة البيت بس، ومقفول بكود سري. "كود جديد" في نافذة الريموت بيقطع أي موبايل قديم.</li>
+</ul>
+
+<h2 id="guide"><svg class="ico"><use href="assets/icons.svg#guide"/></svg>دليل البرامج والتسجيل</h2>
+<ul>
+  <li><b>دليل البرامج:</b> <kbd>Ctrl</kbd>+<kbd>G</kbd>. القنوات على جنب وبرامج اليوم على الجنب التاني.</li>
+  <li><b>شوف اللي فاتك:</b> البرامج اللي عدّت وعليها علامة ⏪ تقدر تتفرج عليها من تسجيلات المزوّد، أو ابدأ البرنامج الحالي من أوله (لو مزوّدك بيدعم ده).</li>
+  <li><b>فكّرني:</b> اختار برنامج جاي واضغط "فكّرني"، هيظهرلك تنبيه قبل ما يبدأ بدقيقة.</li>
+  <li><b>تسجيل:</b> <kbd>Ctrl</kbd>+<kbd>R</kbd> يسجّل اللي شغّال دلوقتي. ومن الدليل اختار برنامج واضغط "تسجيل"، والبرنامج هيحوّل على القناة ويسجّله لوحده (خلّي البرنامج مفتوح). التسجيلات في <b>الفيديوهات ← AEF Media Player ← Recordings</b>.</li>
+</ul>
+
+<h2 id="more"><svg class="ico"><use href="assets/icons.svg#grid"/></svg>مشاهدة متعددة وقفل القنوات</h2>
+<ul>
+  <li><b>قناتين أو أربعة مع بعض:</b> <kbd>Ctrl</kbd>+<kbd>U</kbd>، أو كليك يمين على قناة ← "شاهد مع قنوات تانية". دوس على أي صورة تسمع صوتها، ودبل كليك تتفرج عليها لوحدها.</li>
+  <li><b>قفل برقم سري:</b> كليك يمين على قناة في القائمة ← اقفل القناة أو المجموعة كلها. أول مرة هتختار رقم سري (4 أرقام أو أكتر). الإعدادات ← IPTV فيها تغيير الرقم أو شيل كل الأقفال.</li>
+</ul>
+
+<h2 id="play"><svg class="ico"><use href="assets/icons.svg#play"/></svg>التشغيل</h2>
 <ul>
   <li><b>فتح ملف:</b> اسحبه على البرنامج، أو <kbd>Ctrl</kbd>+<kbd>O</kbd>. فولدر كامل بيتفتح كقائمة تشغيل.</li>
-  <li><b>بث من الإنترنت:</b> <kbd>Ctrl</kbd>+<kbd>N</kbd> واكتب العنوان.</li>
-  <li><b>يكمّل من مكان ما وقفت:</b> الأفلام بتفتح عند آخر مكان شفته (تقدر تقفل ده من الإعدادات).</li>
+  <li><b>يكمّل من مكان ما وقفت:</b> الأفلام (وأفلام ومسلسلات حسابات IPTV) بتفتح عند آخر مكان شفته.</li>
   <li><b>صورة على شريط الوقت:</b> قف بالماوس على الشريط تشوف صورة من اللحظة دي.</li>
-  <li><b>العلامات:</b> اضغط <kbd>B</kbd> تحفظ اللحظة الحالية، و <kbd>Shift</kbd>+<kbd>B</kbd> تروح للعلامة اللي بعدها. العلامات بتبان على الشريط، وموجودة في قائمة التشغيل ← العلامات.</li>
-  <li><b>مؤقت النوم:</b> التشغيل ← مؤقت النوم. اختار مدة أو "لما الملف ده يخلص"، والصوت بيوطى بالراحة قبل ما يقف.</li>
+  <li><b>العلامات:</b> <kbd>B</kbd> تحفظ اللحظة، و <kbd>Shift</kbd>+<kbd>B</kbd> تروح للعلامة اللي بعدها.</li>
+  <li><b>مؤقت النوم:</b> التشغيل ← مؤقت النوم، والصوت بيوطى بالراحة قبل ما يقف.</li>
   <li><b>المشغّل المصغّر:</b> <kbd>Ctrl</kbd>+<kbd>M</kbd> شباك صغير فوق أي برنامج.</li>
 </ul>
 
-<h2 id="subs">الترجمة</h2>
+<h2 id="subs"><svg class="ico"><use href="assets/icons.svg#subs"/></svg>الترجمة</h2>
 <ul>
   <li>ملف الترجمة اللي بنفس اسم الفيلم بيتفتح لوحده. ملفات الترجمة العربية القديمة بتظهر صح من غير ما تعمل حاجة.</li>
-  <li><b>ترجمة من الإنترنت:</b> <kbd>Ctrl</kbd>+<kbd>D</kbd> (أو الترجمة ← البحث عن ترجمة على الإنترنت). النجمة ★ معناها إن الترجمة معمولة لنفس نسخة الفيديو بالظبط. الترجمة بتتحفظ جنب الفيديو. من غير حساب، الخدمة بتسمح بكام تحميل في اليوم.</li>
-  <li>حجم الخط واللون والتأخير/التقديم: من قائمة الترجمة، أو <kbd>G</kbd> و <kbd>H</kbd> للتوقيت.</li>
+  <li><b>ترجمة من الإنترنت:</b> <kbd>Ctrl</kbd>+<kbd>D</kbd>. النجمة ★ معناها إن الترجمة معمولة لنفس نسخة الفيديو بالظبط.</li>
+  <li>حجم الخط واللون والتوقيت: من قائمة الترجمة، أو <kbd>G</kbd> و <kbd>H</kbd> للتوقيت.</li>
 </ul>
 
-<h2 id="iptv">IPTV</h2>
-<h3>بحساب مزوّد الخدمة</h3>
-<ol>
-  <li>الوسائط ← حسابات IPTV (<kbd>Ctrl</kbd>+<kbd>T</kbd>) ← إضافة حساب.</li>
-  <li>اكتب عنوان السيرفر واسم المستخدم وكلمة السر اللي بعتهملك المزوّد، واضغط "تأكيد وحفظ".</li>
-  <li>اختار <b>البث المباشر</b> أو <b>الأفلام</b> أو <b>المسلسلات</b>.</li>
-</ol>
-<p>كلمة السر بتتحفظ متشفّرة على الجهاز، ومش بتتكتب في أي ملف ولا سجل.</p>
-<h3>بملف قنوات (m3u)</h3>
-<p>افتح الملف زي أي ملف. لو فيه لوجوهات ومجموعات ودليل برامج هتظهر لوحدها.</p>
-<h3>في قائمة القنوات</h3>
+<h2 id="library"><svg class="ico"><use href="assets/icons.svg#library"/></svg>المكتبة والتشغيل على التليفزيون</h2>
 <ul>
-  <li><b>بحث:</b> اكتب في خانة البحث. <kbd>Enter</kbd> يشغّل أول نتيجة، و <kbd>Esc</kbd> يمسح البحث.</li>
-  <li><b>المجموعات والمفضلة:</b> زرار "كل المجموعات". النجمة جنب القناة تضيفها للمفضلة.</li>
-  <li><b>القنوات الواقفة:</b> زرار الواي فاي يفحص القنوات، ومن "كل المجموعات" تقدر تخفي الواقف.</li>
+  <li><b>المكتبة:</b> <kbd>Ctrl</kbd>+<kbd>E</kbd>. المسلسلات بتتعرف من أسماء الملفات زي <code>Show.S01E02</code> أو <code>مسلسل - الحلقة 5</code>.</li>
+  <li><b>التليفزيون الذكي:</b> <kbd>Ctrl</kbd>+<kbd>K</kbd> واختار التليفزيون (لازم يكون على نفس الشبكة)، أو "عرض الشاشة كلها (Miracast)".</li>
 </ul>
 
-<h2 id="guide">دليل البرامج والتسجيل</h2>
+<h2 id="look"><svg class="ico"><use href="assets/icons.svg#palette"/></svg>الشكل واللغة وسهولة الاستخدام</h2>
 <ul>
-  <li><b>دليل البرامج:</b> <kbd>Ctrl</kbd>+<kbd>G</kbd>. القنوات على جنب وبرامج اليوم على الجنب التاني.</li>
-  <li><b>فكّرني:</b> اختار برنامج جاي واضغط "فكّرني"، هيظهرلك تنبيه قبل ما يبدأ بدقيقة.</li>
-  <li><b>تسجيل:</b> <kbd>Ctrl</kbd>+<kbd>R</kbd> يسجّل اللي شغّال دلوقتي. ومن الدليل اختار برنامج واضغط "تسجيل"، والبرنامج هيحوّل على القناة ويسجّله لوحده (خلّي البرنامج مفتوح).</li>
-  <li>التسجيلات بتتحفظ في <b>الفيديوهات ← AEF Media Player ← Recordings</b>.</li>
+  <li><b>الإعدادات:</b> <kbd>Ctrl</kbd>+<kbd>,</kbd>.</li>
+  <li><b>اللغة:</b> العربية، الإنجليزية، الفرنسية، التركية، الأردو.</li>
+  <li><b>الشكل:</b> داكن، فاتح، أسود تماماً، رمادي أزرق، و8 ألوان مميزة.</li>
+  <li><b>سهولة الاستخدام:</b> حجم الخط (عادي، كبير، أكبر)، وتباين عالٍ، والأزرار ليها أسماء بيقراها قارئ الشاشة.</li>
 </ul>
 
-<h2 id="library">المكتبة</h2>
-<ul>
-  <li><kbd>Ctrl</kbd>+<kbd>E</kbd>. أول مرة بتعرض فولدر الفيديوهات؛ من "الفولدرات..." ضيف أماكن تانية.</li>
-  <li>المسلسلات بتتعرف من أسماء الملفات زي <code>Show.S01E02</code> أو <code>مسلسل - الحلقة 5</code> أو فولدرات <code>Season 1</code>.</li>
-  <li>"كمّل المشاهدة" فيها اللي وقفت في نصه، والحلقة بتكمّل باقي المسلسل.</li>
-</ul>
-
-<h2 id="tv">التشغيل على التليفزيون</h2>
-<ul>
-  <li><b>للتليفزيون الذكي:</b> <kbd>Ctrl</kbd>+<kbd>K</kbd> واختار التليفزيون. الفيديو هيشتغل عليه، والمسطرة في الكمبيوتر بتوقفه وتشغّله. لازم التليفزيون والكمبيوتر يكونوا على نفس الشبكة، وأول مرة ممكن ويندوز يسألك تسمح للبرنامج يستخدم الشبكة.</li>
-  <li><b>عرض الشاشة كلها:</b> من نفس النافذة "عرض الشاشة كلها (Miracast)" للتليفزيونات اللي بتدعمها.</li>
-</ul>
-
-<h2 id="keys">الاختصارات</h2>
+<h2 id="keys"><svg class="ico"><use href="assets/icons.svg#keys"/></svg>الاختصارات</h2>
 <table>
-  <tr><td><kbd>Space</kbd></td><td>تشغيل / إيقاف مؤقت</td></tr>
+  <tr><td><kbd>Space</kbd></td><td>تشغيل / إيقاف مؤقت (في وضع التليفزيون: اسم القناة)</td></tr>
   <tr><td><kbd>F</kbd> / <kbd>F11</kbd></td><td>ملء الشاشة (<kbd>Esc</kbd> للخروج)</td></tr>
-  <tr><td><kbd>←</kbd> <kbd>→</kbd></td><td>10 ثواني (مع <kbd>Shift</kbd> 3 ثواني، مع <kbd>Ctrl</kbd> دقيقة)</td></tr>
-  <tr><td><kbd>↑</kbd> <kbd>↓</kbd></td><td>الصوت</td></tr>
+  <tr><td><kbd>←</kbd> <kbd>→</kbd></td><td>10 ثواني (في وضع التليفزيون: الصوت)</td></tr>
+  <tr><td><kbd>↑</kbd> <kbd>↓</kbd></td><td>الصوت (في وضع التليفزيون: القناة التالية / السابقة)</td></tr>
+  <tr><td><kbd>Enter</kbd> / <kbd>Backspace</kbd></td><td>في وضع التليفزيون: قائمة القنوات / آخر قناة</td></tr>
+  <tr><td><kbd>T</kbd> / <kbd>I</kbd></td><td>وضع التليفزيون / معلومات القناة</td></tr>
   <tr><td><kbd>M</kbd></td><td>كتم الصوت</td></tr>
   <tr><td><kbd>N</kbd> / <kbd>P</kbd></td><td>التالي / السابق</td></tr>
   <tr><td><kbd>V</kbd></td><td>إظهار / إخفاء الترجمة</td></tr>
   <tr><td><kbd>B</kbd> / <kbd>Shift</kbd>+<kbd>B</kbd></td><td>علامة / العلامة التالية</td></tr>
   <tr><td><kbd>Ctrl</kbd>+<kbd>O</kbd> / <kbd>Ctrl</kbd>+<kbd>N</kbd></td><td>فتح ملف / بث</td></tr>
-  <tr><td><kbd>Ctrl</kbd>+<kbd>E</kbd></td><td>المكتبة</td></tr>
-  <tr><td><kbd>Ctrl</kbd>+<kbd>T</kbd> / <kbd>Ctrl</kbd>+<kbd>G</kbd></td><td>حسابات IPTV / دليل البرامج</td></tr>
-  <tr><td><kbd>Ctrl</kbd>+<kbd>D</kbd></td><td>ترجمة من الإنترنت</td></tr>
-  <tr><td><kbd>Ctrl</kbd>+<kbd>R</kbd></td><td>تسجيل</td></tr>
-  <tr><td><kbd>Ctrl</kbd>+<kbd>K</kbd></td><td>تشغيل على التليفزيون</td></tr>
+  <tr><td><kbd>Ctrl</kbd>+<kbd>T</kbd> / <kbd>Ctrl</kbd>+<kbd>G</kbd></td><td>الشاشة الرئيسية للـ IPTV / دليل البرامج</td></tr>
+  <tr><td><kbd>Ctrl</kbd>+<kbd>J</kbd> / <kbd>Ctrl</kbd>+<kbd>U</kbd></td><td>ريموت الموبايل / مشاهدة متعددة</td></tr>
+  <tr><td><kbd>Ctrl</kbd>+<kbd>R</kbd> / <kbd>Ctrl</kbd>+<kbd>D</kbd></td><td>تسجيل / ترجمة من الإنترنت</td></tr>
+  <tr><td><kbd>Ctrl</kbd>+<kbd>E</kbd> / <kbd>Ctrl</kbd>+<kbd>K</kbd></td><td>المكتبة / التشغيل على التليفزيون</td></tr>
   <tr><td><kbd>Ctrl</kbd>+<kbd>,</kbd></td><td>الإعدادات</td></tr>
 </table>
 
-<h2 id="problems">لو حصلت مشكلة</h2>
+<h2 id="problems"><svg class="ico"><use href="assets/icons.svg#tools"/></svg>لو حصلت مشكلة</h2>
 <ul>
   <li>الصورة طالعة غلط أو بتقطّع: الإعدادات ← التشغيل ← اقفل "تسريع العتاد" وجرّب تاني.</li>
   <li>الترجمة حروف غريبة: الترجمة ← ترميز النص ← العربية (Windows-1256).</li>
   <li>قناة مش شغالة: جرّب فحص القنوات، وكلّم مزوّد الخدمة لو القنوات كلها واقفة.</li>
+  <li>الموبايل مش بيوصل للريموت: اتأكد إنه على نفس الواي فاي، وإن ويندوز سامح للبرنامج بالشبكة. ولو عنوان الكمبيوتر اتغير، امسح الكود تاني.</li>
   <li>لسه فيه مشكلة؟ قائمة "مساعدة" ← الإبلاغ عن مشكلة جوه البرنامج، أو <a href="https://github.com/merofarahat923-coder/aef-media-player-releases/issues/new">من هنا</a>.</li>
 </ul>
 </main>
 
 <footer><div class="wrap">
+  <a class="brand" href="./"><img src="assets/logo.png" alt="">AEF Media Player</a>
+  <nav><a href="help.html">المساعدة</a><a href="privacy.html">الخصوصية</a><a href="terms.html">شروط الاستخدام</a><a href="https://github.com/merofarahat923-coder/aef-media-player-releases/issues/new">الإبلاغ عن مشكلة</a></nav>
   <div>© AEF Media Player</div>
-  <div><a href="./">الرئيسية</a> · <a href="privacy.html">الخصوصية</a> · <a href="terms.html">شروط الاستخدام</a></div>
 </div></footer>
 </body>
 </html>

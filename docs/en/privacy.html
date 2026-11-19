@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#06080D">
 <title>Privacy policy — AEF Media Player</title>
 <link rel="icon" href="../assets/logo.png">
 <link rel="alternate" hreflang="ar" href="../privacy.html">
@@ -11,18 +12,23 @@
 <body>
 <header class="top"><div class="wrap">
   <a class="brand" href="./"><img src="../assets/logo.png" alt="">AEF Media Player</a>
-  <nav><a href="./">Home</a><a class="lang" href="../privacy.html" hreflang="ar">العربية</a></nav>
+  <nav>
+    <a class="hide-sm" href="./">Home</a>
+    <a class="hide-sm" href="help.html">Help</a>
+    <a class="lang" href="../privacy.html" hreflang="ar"><svg class="ico"><use href="../assets/icons.svg#globe"/></svg><span>العربية</span></a>
+    <a class="btn primary small" href="https://github.com/merofarahat923-coder/aef-media-player-releases/releases/latest"><svg class="ico"><use href="../assets/icons.svg#download"/></svg>Download</a>
+  </nav>
 </div></header>
 
 <main class="doc">
-<h1>Privacy policy</h1>
-<div class="updated">Last updated: 18 November 2026</div>
+<div class="head"><div class="badge"><svg class="ico"><use href="../assets/icons.svg#shield"/></svg></div><h1>Privacy policy</h1></div>
+<div class="updated">Last updated: 19 November 2026</div>
 
 <p class="note">In short: AEF Media Player collects no data about you and has no ads or tracking. It only goes online for things you ask for, and this page lists exactly where and why.</p>
 
 <h2>What stays on your computer</h2>
 <ul>
-  <li><b>Settings:</b> language and look, recent files, where you stopped each video, bookmarks, favourites, library folders and reminders, in <code>%APPDATA%\AEF Media Player</code>.</li>
+  <li><b>Settings:</b> language and look, recent files, where you stopped each video, bookmarks, favourites, library folders, reminders, and the channels and films you watched from IPTV accounts (for "Continue watching"), in <code>%APPDATA%\AEF Media Player</code>.</li>
   <li><b>IPTV accounts:</b> the password is stored <b>encrypted</b> for your Windows account and never written in readable form to any file or log.</li>
   <li><b>Temporary files:</b> channel logos and library pictures in <code>%LOCALAPPDATA%\AEF Media Player</code>, and a small log (<code>aef.log</code>, beside the program or in <code>%APPDATA%\AEF Media Player</code>) to help solve problems, with no passwords in it.</li>
 </ul>
@@ -31,10 +37,11 @@
 <h2>When the player goes online</h2>
 <table>
   <tr><th>When</th><th>To whom</th><th>What is sent</th></tr>
-  <tr><td>Update check (once a day; can be turned off)</td><td>GitHub</td><td>A plain request for the latest version. Nothing about you.</td></tr>
+  <tr><td>Update check (once a day; can be turned off)</td><td>GitHub</td><td>A plain request for the latest version and, when there is one, the update file itself. Nothing about you.</td></tr>
   <tr><td>Finding subtitles online</td><td>OpenSubtitles.com</td><td>The title (from the file name or what you typed), the language, and a fingerprint computed from the file to find the exact match. Never the file itself.</td></tr>
   <tr><td>IPTV accounts and channel lists</td><td>Your provider's server and the addresses in your channel list</td><td>Your user name and password, to your provider's server only; ordinary requests for channels, logos and the guide.</td></tr>
   <tr><td>Channel check</td><td>The channels in the list</td><td>A small request to see whether each answers.</td></tr>
+  <tr><td>Phone remote (only when you open it)</td><td>Your phone, on your home network</td><td>The player opens an address on your home network only, locked by a random secret code. The phone sees what is playing and the channel list; nobody outside your home can reach it.</td></tr>
   <tr><td>Play on TV</td><td>The TV on your home network</td><td>Only the video you chose, on your local network, at a random temporary address closed when you stop.</td></tr>
 </table>
 
@@ -53,8 +60,9 @@
 </main>
 
 <footer><div class="wrap">
+  <a class="brand" href="./"><img src="../assets/logo.png" alt="">AEF Media Player</a>
+  <nav><a href="help.html">Help</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="https://github.com/merofarahat923-coder/aef-media-player-releases/issues/new">Report a problem</a></nav>
   <div>© AEF Media Player</div>
-  <div><a href="./">Home</a> · <a href="help.html">Help</a> · <a href="terms.html">Terms</a></div>
 </div></footer>
 </body>
 </html>
